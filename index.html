@@ -1,0 +1,266 @@
+<!------ Include the above in your HEAD tag ---------->
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+	<meta name="description"
+	content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<title>RádioRetrô - Página inicial</title>
+
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	<link rel="stylesheet" type="text/css" href="./css/audio.css">
+	<link id="favicon" href="./src/icon.png" rel="icon" type="image/x-icon">
+</head>
+<body>
+	<div class="page-wrapper chiller-theme playerdiv">
+
+		<a style="height: 100%;"id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+			<i class="fas fa-bars"></i>
+		</a>
+		<nav id="sidebar" class="sidebar-wrapper">
+			<div class="sidebar-content">
+				<div class="sidebar-brand">
+					<a href="index.html">RádioRetrô</a>
+					<div id="close-sidebar">
+						<i class="fas fa-times"></i>
+					</div>
+				</div>
+				<div class="sidebar-header">
+					<div class="user-pic">
+						<img class="img-responsive img-rounded" src="./src/profile.jpeg"
+						alt="User picture">
+					</div>
+					<div class="user-info">
+						<span class="user-name">John 
+							<strong>Doe</strong>
+						</span>
+						<span class="user-role">Usuário</span>
+						<span class="user-status">
+							<i class="fa fa-circle"></i>
+							<span>Online</span>
+						</span>
+					</div>
+				</div>
+				<!-- sidebar-header  -->
+				<div class="d-flex justify-content-center">
+					<div class="searchbar">
+						<input class="search_input" type="text" name="" placeholder="Pesquisar...">
+						<a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+					</div>
+				</div>
+				<hr>
+				<!-- sidebar-search  -->
+				<div class="sidebar-menu">
+					<ul>
+						<li class="header-menu">
+							<span>Geral</span>
+						</li>
+						<li class="sidebar-dropdown">
+							<a href="#">
+								<i class="fa fa-music"></i>
+								<span>Minhas Músicas</span>
+							</a>
+							<div class="sidebar-submenu">
+								<ul>
+									<li>
+										<a href="./pages/maisqueridas/maisqueridas.html">Mais queridas
+											<i class="fa fa-star"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="sidebar-dropdown">
+							<a href="#">
+								<i class="fa fa-user"></i>
+								<span>Artistas</span>
+							</a>
+							<div class="sidebar-submenu">
+								<ul>
+									<li>
+										<a href="./pages/elvis/elvis.html">Elvis Presley</a>
+									</li>
+									<li>
+										<a href="./pages/u2/u2.html">U2</a>
+									</li>
+									<li>
+										<a href="./pages/beatles/beatles.html">The Beatles</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="header-menu">
+							<span>Guia rápido</span>
+						</li>
+						<li>
+							<a href="index.html">
+								<i class="fa fa-home"></i>
+								<span>Início</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- sidebar-menu  -->
+			</div>
+			<!-- sidebar-content  -->
+			<div class="sidebar-footer">
+				Created by GyovanneCavalcanti
+			</div>
+		</nav>
+		<!-- sidebar-wrapper  -->
+		<main class="page-content">
+
+			<div  align="justify" class="container"style="color: white;">
+				<h1>Bem vindo ao RádioRetrô</h1>
+				<section style="margin-top:80px">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col">
+								<div id="demo" class="carousel slide" data-ride="carousel">
+
+									<!-- Indicators -->
+									<ul class="carousel-indicators">
+										<li data-target="#demo" data-slide-to="0" class="active"></li>
+										<li data-target="#demo" data-slide-to="1"></li>
+										<li data-target="#demo" data-slide-to="2"></li>
+									</ul>
+
+									<!-- The slideshow -->
+									<div class="carousel-inner">
+										<div class="carousel-item">
+											<img src="./pages/elvis/elvis.jpg" alt="Los Angeles">
+										</div>
+										<div class="carousel-item">
+											<img src="./pages/u2/u2.jpg" alt="Chicago">
+										</div>
+										<div class="carousel-item active">
+											<img src="./pages/beatles/beatles.jpg" alt="New York">
+										</div>
+									</div>
+
+									<!-- Left and right controls -->
+									<a class="carousel-control-prev" href="#demo" data-slide="prev">
+										<span class="carousel-control-prev-icon"></span>
+									</a>
+									<a class="carousel-control-next" href="#demo" data-slide="next">
+										<span class="carousel-control-next-icon"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<div class="container">
+					<div class="row">
+						<div class="col"></div>
+						<p >A RádioRetrô é um reprodutor de áudio disponível para usuários que gostam de ouvir músicas de qualidade. Essa plataforma conta com 11 músicas em seu acervo. No momento a RadioRetrô possui 01 (um) usuário ativo cadastrado no sistema como exemplo, permitindo que esse ouça conteúdo de músicas de compositores conhecidos mundialmente como Elvis Presley, U2 e The Beatles, que são clássicos do Rock internacional e que fazem parte do estilo musical retrô (de época), que é a ênfase deste software. No geral, esse sistema fornece ao usuário as funcionalidades básicas de um reprodutor de áudio, com uma interface simplificada e bem intuitiva.</p>
+					</div>
+				</div>
+				<!-- .//container -->
+
+				<section>
+					<h2>Artistas recomendados</h2>
+					<div class="container-fluid">
+						<div class="row">
+
+							<!--Profile Card 5-->
+							<div class="col-md-4">
+								<div class="card profile-card-5">
+									<div class="card-img-block">
+										<img class="card-img-top" src="./src/elvis.jpg" alt="Card image cap">
+									</div>
+									<div class="card-body pt-0">
+										<h5 class="card-title">Elvis Presley</h5>
+										<p class="card-text">Elvis Presley (1935-1977) foi um cantor norte-americano, considerado o maior ídolo do rock'n roll mundial.</p>
+										<a href="./pages/elvis/elvis.html" class="btn btn-dark">
+											<svg id="i-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+												<path d="M10 2 L10 30 24 16 Z" />
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="card profile-card-5">
+									<div class="card-img-block">
+										<img class="card-img-top" src="./src/u2.jpg" alt="Card image cap">
+									</div>
+									<div class="card-body pt-0">
+										<h5 class="card-title">U2</h5>
+										<p class="card-text">U2 é uma banda irlandesa de rock formada no ano de 1976. O grupo é composto por Bono, The Edge, Adam Clayton e Larry Mullen Jr.</p>
+										<a href="./pages/u2/u2.html" class="btn btn-dark">
+											<svg id="i-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+												<path d="M10 2 L10 30 24 16 Z" />
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="card profile-card-5">
+									<div class="card-img-block">
+										<img class="card-img-top" src="./src/beatles.jpg" alt="Card image cap">
+									</div>
+									<div class="card-body pt-0">
+										<h5 class="card-title">The Beatles</h5>
+										<p class="card-text">The Beatles foi uma banda de rock britânica, formada em 1960 por John Lennon, Ringo Starr, Paul McCartney e George Harrison.</p>
+										<a href="./pages/beatles/beatles.html" class="btn btn-dark">
+											<svg id="i-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+												<path d="M10 2 L10 30 24 16 Z" />
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<br/>
+
+				<br/>
+
+				<article class="bg-secondary mb-3">  
+					<div class="card-body text-center">
+						<h4 class="text-white">RadioRetrô</h4>
+						<p class="h5 text-white">Contribua com esse projeto</p>   <br>
+						<p><a class="btn btn-dark" target="_blank" href="https://github.com/GYOVANNE/MusicPlayer">
+							<svg id="i-github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32">
+								<path stroke-width="0" fill="currentColor" d="M32 0 C14 0 0 14 0 32 0 53 19 62 22 62 24 62 24 61 24 60 L24 55 C17 57 14 53 13 50 13 50 13 49 11 47 10 46 6 44 10 44 13 44 15 48 15 48 18 52 22 51 24 50 24 48 26 46 26 46 18 45 12 42 12 31 12 27 13 24 15 22 15 22 13 18 15 13 15 13 20 13 24 17 27 15 37 15 40 17 44 13 49 13 49 13 51 20 49 22 49 22 51 24 52 27 52 31 52 42 45 45 38 46 39 47 40 49 40 52 L40 60 C40 61 40 62 42 62 45 62 64 53 64 32 64 14 50 0 32 0 Z" />
+							</svg>
+						RadioRetrô</a></p>
+					</div>
+					<br><br>
+				</article>
+			</div>
+		</main>
+	</div>
+
+
+	<!-- page-wrapper -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/musics.js"></script>
+	<script type="text/javascript" src="./js/audio.js"></script>
+
+	<script type="text/javascript" src="./js/player.js"></script>
+	<script type="text/javascript" src="./js/swing.js"></script>
+	<script type="text/javascript" src="./js/volume.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

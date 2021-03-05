@@ -1,0 +1,286 @@
+<!------ Include the above in your HEAD tag ---------->
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+	<meta name="description"
+	content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<title>Multimídia - Mais queridas</title>
+
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="../../css/styles.css">
+	<link rel="stylesheet" type="text/css" href="../../css/audio.css">
+	<link id="favicon" href="../../src/icon.png" rel="icon" type="image/x-icon">
+</head>
+<body>
+	<div class="page-wrapper chiller-theme playerdiv">
+
+		<a style="height: 100%; size: 10px;" id="show-sidebar" class="btn btn-sm btn-dark">
+			<i class="fas fa-bars"></i>
+		</a>
+		<nav id="sidebar" class="sidebar-wrapper">
+			<div class="sidebar-content">
+				<div class="sidebar-brand">
+					<a href="../../index.html">RádioRetrô</a>
+					<div id="close-sidebar">
+						<i class="fas fa-times"></i>
+					</div>
+				</div>
+				<div class="sidebar-header">
+					<div class="user-pic">
+						<img class="img-responsive img-rounded" src="../../src/profile.jpeg"alt="User picture">
+					</div>
+					<div class="user-info">
+						<span class="user-name">John
+							<strong>Doe</strong>
+						</span>
+						<span class="user-role">Usuário</span>
+						<span class="user-status">
+							<i class="fa fa-circle"></i>
+							<span>Online</span>
+						</span>
+					</div>
+				</div>
+				<!-- sidebar-header  -->
+				<div class="d-flex justify-content-center">
+					<div class="searchbar">
+						<input class="search_input" type="text" name="" placeholder="Pesquisar...">
+						<a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+					</div>
+				</div>
+				<hr>
+				<!-- sidebar-search  -->
+				<div class="sidebar-menu">
+					<ul>
+						<li class="header-menu">
+							<span>Geral</span>
+						</li>
+						<li class="sidebar-dropdown">
+							<a href="#">
+								<i class="fa fa-music"></i>
+								<span>Minhas Músicas</span>
+							</a>
+							<div class="sidebar-submenu">
+								<ul>
+									<li>
+										<a href="#">Mais queridas
+											<i class="fa fa-star"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="sidebar-dropdown">
+							<a href="#">
+								<i class="fa fa-user"></i>
+								<span>Artistas</span>
+							</a>
+							<div class="sidebar-submenu">
+								<ul>
+									<li>
+										<a href="../u2/u2.html">U2</a>
+									</li>
+									<li>
+										<a href="../elvis/elvis.html">Elvis Presley</a>
+									</li>
+									<li>
+										<a href="../beatles/beatles.html">The Bealtes</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="header-menu">
+							<span>Guia rápido</span>
+						</li>
+						<li>
+							<a href="../../index.html">
+								<i class="fa fa-home"></i>
+								<span>Início</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- sidebar-menu  -->
+			</div>
+			<!-- sidebar-content  -->
+			<div class="sidebar-footer">
+				rodapé
+			</div>
+		</nav>
+		<!-- sidebar-wrapper  -->
+		<main class="page-content">
+			<div class="container">
+				<div class="efeito">
+					<section style="margin-top:80px">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col">
+									<div id="demo" class="carousel slide" data-ride="carousel">
+
+										<!-- Indicators -->
+										<ul class="carousel-indicators">
+											<li data-target="#demo" data-slide-to="0" class="active"></li>
+											<li data-target="#demo" data-slide-to="1"></li>
+											<li data-target="#demo" data-slide-to="2"></li>
+										</ul>
+
+										<!-- The slideshow -->
+										<div class="carousel-inner">
+											<div class="carousel-item">
+												<img src="../elvis/elvis.jpg" alt="Los Angeles">
+											</div>
+											<div class="carousel-item">
+												<img src="../u2/u2.jpg" alt="Chicago">
+											</div>
+											<div class="carousel-item active">
+												<img src="../beatles/beatles.jpg" alt="New York">
+											</div>
+										</div>
+
+										<!-- Left and right controls -->
+										<a class="carousel-control-prev" href="#demo" data-slide="prev">
+											<span class="carousel-control-prev-icon"></span>
+										</a>
+										<a class="carousel-control-next" href="#demo" data-slide="next">
+											<span class="carousel-control-next-icon"></span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<div class="canvas" id="canvas"></div>
+					<table class="table tabela">
+						<thead>
+							<tr>
+								<td colspan="4">
+									<div>
+										<h4>Mais queridas</h4>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Faixa</th>
+								<th scope="col">Artista</th>
+								<th scope="col">Album</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<button onclick="clicou(u2Track01)" class="btn btn-dark">
+										<svg id="i-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15"
+										fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"
+										stroke-width="2">
+										<path d="M10 2 L10 30 24 16 Z" />
+									</svg>
+								</button>
+							</td>
+							<td>With or without you </td>
+							<td>U2</td>
+							<td>Desconhecido</td>
+						</tr>
+						<tr>
+							<td>
+								<button onclick="clicou(u2Track02)" class="btn btn-dark">
+									<svg id="i-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15"
+									fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"
+									stroke-width="2">
+									<path d="M10 2 L10 30 24 16 Z" />
+								</svg>
+							</button>
+						</td>
+						<td>Every Breaking Wave</td>
+						<td>U2</td>
+						<td>Abbey Road, 2017</td>
+					</tr>
+					<tr>
+						<td>
+							<button onclick="clicou(elvisTrack02)" class="btn btn-dark">
+								<svg id="i-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15"
+								fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"
+								stroke-width="2">
+								<path d="M10 2 L10 30 24 16 Z" />
+							</svg>
+						</button>
+					</td>
+					<td>Can't Help Falling In Love</td>
+					<td>Elvis Presley</td>
+					<td>Desconhecido</td>
+				</tr>
+				<tr>
+					<td>
+						<button onclick="clicou(elvisTrack03)" class="btn btn-dark">
+							<svg id="i-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15"
+							fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"
+							stroke-width="2">
+							<path d="M10 2 L10 30 24 16 Z" />
+						</svg>
+					</button>
+				</td>
+				<td> Hound Dog</td>
+				<td>Elvis Presley</td>
+				<td>Desconhecido</td>
+			</tr>
+			<tr>
+				<td>
+					<button onclick="clicou(beatlesTrack02)" class="btn btn-dark">
+						<svg id="i-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15"
+						fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"
+						stroke-width="2">
+						<path d="M10 2 L10 30 24 16 Z" />
+					</svg>
+				</button>
+			</td>
+			<td>Long Tall Sally</td>
+			<td>The Beatles</td>
+			<td>GREATEST</td>
+		</tr>
+		<tr>
+			<td>
+				<button onclick="clicou(beatlesTrack03)" class="btn btn-dark">
+					<svg id="i-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15"
+					fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"
+					stroke-width="2">
+					<path d="M10 2 L10 30 24 16 Z" />
+				</svg>
+			</button>
+		</td>
+		<td>Rock And Roll Music</td>
+		<td>The Beatles</td>
+		<td>GREATEST</td>
+	</tr>
+</tbody>
+</table>
+<div id="playerMusic"></div>
+<div id="balanco"></div>
+<div id="volume"></div>
+<div style="text-align: center;" id="botoes"></div>
+</div>
+</div>
+</main>
+</div>
+
+<!-- page-wrapper -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="../../js/musics.js"></script>
+<script type="text/javascript" src="../../js/audio.js"></script>
+
+<script type="text/javascript" src="../../js/player.js"></script>
+<script type="text/javascript" src="../../js/swing.js"></script>
+<script type="text/javascript" src="../../js/volume.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
